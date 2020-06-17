@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questions",
+  "info": {
+    "name": "Question"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "question_category": {
+      "model": "question-category",
+      "via": "questions"
+    },
+    "question_number": {
+      "type": "integer",
+      "default": 0,
+      "required": true,
+      "max": 6
+    },
+    "accepted_value": {
+      "type": "enumeration",
+      "enum": [
+        "number",
+        "text"
+      ]
+    }
+  }
+}

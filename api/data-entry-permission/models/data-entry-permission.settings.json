@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "data_entry_permissions",
+  "info": {
+    "name": "DataEntryPermission"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "permission": {
+      "type": "string"
+    },
+    "permitted_users": {
+      "via": "data_entry_permissions",
+      "collection": "permitted-user"
+    }
+  }
+}

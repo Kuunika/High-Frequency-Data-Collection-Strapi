@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "facilities",
+  "info": {
+    "name": "Facility"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "facility_name": {
+      "type": "string"
+    },
+    "facility_code": {
+      "type": "string"
+    },
+    "permitted_users": {
+      "via": "facility",
+      "collection": "permitted-user"
+    },
+    "collected_data": {
+      "via": "facility",
+      "collection": "collected-datum"
+    }
+  }
+}

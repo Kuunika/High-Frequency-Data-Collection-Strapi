@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "collected_data",
+  "info": {
+    "name": "CollectedDatum"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "data_collection_for_date": {
+      "type": "date"
+    },
+    "facility": {
+      "model": "facility",
+      "via": "collected_data"
+    },
+    "collected_data": {
+      "type": "json"
+    },
+    "question_category": {
+      "via": "collected_data",
+      "model": "question-category"
+    }
+  }
+}

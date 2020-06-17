@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/permitted-users",
+      "handler": "permitted-user.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/permitted-users/count",
+      "handler": "permitted-user.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/permitted-users/:id",
+      "handler": "permitted-user.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/permitted-users",
+      "handler": "permitted-user.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/permitted-users/:id",
+      "handler": "permitted-user.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/permitted-users/:id",
+      "handler": "permitted-user.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

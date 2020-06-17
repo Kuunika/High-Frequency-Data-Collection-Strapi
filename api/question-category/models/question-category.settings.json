@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "question_categories",
+  "info": {
+    "name": "QuestionCategory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Category": {
+      "type": "string"
+    },
+    "questions": {
+      "via": "question_category",
+      "collection": "question"
+    },
+    "collected_data": {
+      "collection": "collected-datum",
+      "via": "question_category"
+    }
+  }
+}
