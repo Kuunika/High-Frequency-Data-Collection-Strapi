@@ -16,12 +16,16 @@
       "model": "facility",
       "via": "collected_data"
     },
-    "collected_data": {
-      "type": "json"
+    "answer": {
+      "type": "string"
+    },
+    "question": {
+      "model": "question",
+      "via": "collected_data"
     },
     "question_category": {
-      "via": "collected_data",
-      "model": "question-category"
+      "model": "question-category",
+      "via": "collected_data"
     }
   }
 }

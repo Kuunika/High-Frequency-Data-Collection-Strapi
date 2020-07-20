@@ -17,8 +17,8 @@
       "collection": "question"
     },
     "collected_data": {
-      "collection": "collected-datum",
-      "via": "question_category"
+      "via": "question_category",
+      "collection": "collected-datum"
     }
   }
 }

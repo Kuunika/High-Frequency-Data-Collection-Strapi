@@ -19,8 +19,7 @@
     "question_number": {
       "type": "integer",
       "default": 0,
-      "required": true,
-      "max": 6
+      "required": true
     },
     "accepted_value": {
       "type": "enumeration",
@@ -28,6 +27,10 @@
         "number",
         "text"
       ]
+    },
+    "collected_data": {
+      "via": "question",
+      "collection": "collected-datum"
     }
   }
 }
