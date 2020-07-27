@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "districts",
+  "info": {
+    "name": "District"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "facilities": {
+      "collection": "facility",
+      "via": "district"
+    }
+  }
+}
