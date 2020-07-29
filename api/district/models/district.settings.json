@@ -10,7 +10,9 @@
   },
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "private": false,
+      "required": true
     },
     "facilities": {
       "collection": "facility",

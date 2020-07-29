@@ -13,8 +13,8 @@
       "type": "date"
     },
     "facility": {
-      "model": "facility",
-      "via": "collected_data"
+      "via": "collected_data",
+      "model": "facility"
     },
     "answer": {
       "type": "string"

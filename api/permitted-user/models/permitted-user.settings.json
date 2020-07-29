@@ -22,8 +22,8 @@
       "regex": "(^\\+265)+\\d{9}\\b"
     },
     "facility": {
-      "model": "facility",
-      "via": "permitted_users"
+      "via": "permitted_users",
+      "model": "facility"
     },
     "data_entry_permissions": {
       "collection": "data-entry-permission",

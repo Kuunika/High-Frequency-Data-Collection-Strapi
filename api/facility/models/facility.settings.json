@@ -10,18 +10,19 @@
   },
   "attributes": {
     "facility_name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "facility_code": {
       "type": "string"
     },
     "permitted_users": {
-      "via": "facility",
-      "collection": "permitted-user"
+      "collection": "permitted-user",
+      "via": "facility"
     },
     "collected_data": {
-      "via": "facility",
-      "collection": "collected-datum"
+      "collection": "collected-datum",
+      "via": "facility"
     },
     "district": {
       "via": "facilities",
