@@ -13,8 +13,8 @@
       "type": "string"
     },
     "question_category": {
-      "model": "question-category",
-      "via": "questions"
+      "via": "questions",
+      "model": "question-category"
     },
     "question_number": {
       "type": "integer",

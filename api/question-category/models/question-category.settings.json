@@ -13,12 +13,15 @@
       "type": "string"
     },
     "questions": {
-      "via": "question_category",
-      "collection": "question"
+      "collection": "question",
+      "via": "question_category"
     },
     "collected_data": {
-      "via": "question_category",
-      "collection": "collected-datum"
+      "collection": "collected-datum",
+      "via": "question_category"
+    },
+    "displayName": {
+      "type": "string"
     }
   }
 }

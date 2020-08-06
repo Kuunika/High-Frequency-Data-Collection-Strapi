@@ -26,8 +26,8 @@
       "model": "facility"
     },
     "data_entry_permissions": {
-      "collection": "data-entry-permission",
       "via": "permitted_users",
+      "collection": "data-entry-permission",
       "dominant": true
     }
   }

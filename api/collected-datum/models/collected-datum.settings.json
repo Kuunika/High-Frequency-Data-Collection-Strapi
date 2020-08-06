@@ -24,8 +24,8 @@
       "via": "collected_data"
     },
     "question_category": {
-      "model": "question-category",
-      "via": "collected_data"
+      "via": "collected_data",
+      "model": "question-category"
     }
   }
 }

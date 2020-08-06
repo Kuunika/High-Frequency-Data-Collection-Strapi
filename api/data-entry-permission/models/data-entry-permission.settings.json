@@ -13,8 +13,11 @@
       "type": "string"
     },
     "permitted_users": {
-      "via": "data_entry_permissions",
-      "collection": "permitted-user"
+      "collection": "permitted-user",
+      "via": "data_entry_permissions"
+    },
+    "displayName": {
+      "type": "string"
     }
   }
 }
